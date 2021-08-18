@@ -1,17 +1,39 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Pick Your Nation 
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
+<!--Country values are assigned using radio buttons-->
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-label>My Nation is {{myNation}}</ion-label>
+ <ion-list>
+  <ion-radio-group [(ngModel)]="myNation"><!--tab3.page.ts-->
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+    <ion-item>
+    <ion-label>Ireland</ion-label>
+    <ion-radio value="Ireland"></ion-radio>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Scotland</ion-label>
+    <ion-radio value="Scotland"></ion-radio>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Wales</ion-label>
+    <ion-radio value="Wales"></ion-radio>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>England</ion-label>
+    <ion-radio value="England"></ion-radio>
+  </ion-item>
+
+  </ion-radio-group>
+ </ion-list>
+ <!--Runs the updateNation() method when clicked to save the user nation details into ionic storage-->
+ <ion-button (click)="updateNation()">Update Nation</ion-button>
 </ion-content>

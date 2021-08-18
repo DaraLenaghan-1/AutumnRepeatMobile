@@ -1,17 +1,36 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+  <ion-toolbar >
+    <img src="../assets/icon/british-irish-lions.jpg" width="300" > <!--Logo in the assets folder-->
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Lions Tour App</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <!--Description of british and irish lions tour-->
+  <h1>2021 British & Irish Lions tour to South Africa</h1>
+  <p>The British & Irish Lions are a rugby union team selected from players eligible for the national teams of England,
+     Ireland, Scotland and Wales.</p>
+  <p>The 2021 British & Irish Lions tour to South Africa was an international rugby union tour that took place in
+     South Africa in July and August 2021.</p>
+  <p>The eight-match schedule was announced on 4 December 2019, and confirmed on 14 May 2021. 
+    The Lions also scheduled a home match against Japan for 26 June, the first time the teams had met, and the first game 
+    to be hosted by the Lions since they played Argentina at the Millennium Stadium in 2005.
+     Unlike recent tours, when the Lions played seven games against non-national teams, in 2021 there are only five.</p>
+  <br>
+  <ion-label>My Nation is: {{myNation}}</ion-label>
+  <!--Basic Clickable links that lead to the social medias of the lions tour-->
+  <br>
+  <ion-icon name="logo-facebook"></ion-icon> <a href="https://www.facebook.com/BritishandIrishLions/">Facebook</a>
+  <br>
+  <ion-icon name="logo-twitter"></ion-icon> <a href="https://twitter.com/lionsofficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a>
+  <br>
+  <ion-icon name="logo-youtube"></ion-icon> <a href="https://www.youtube.com/channel/UC5Pw6iUW8Dgmb_JSEqzXH3w">Youtube</a>
+  <br>
+  <ion-icon name="logo-instagram"></ion-icon>  <a href="https://www.instagram.com/britishandirishlions/?hl=en">Instagram</a>
+
 </ion-content>
